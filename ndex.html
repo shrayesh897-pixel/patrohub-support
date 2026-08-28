@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Patro Hub - Nepali Calendar, Panchang, Kundali, Rashifal, NTC & Ncell Recharge, date converter and everyday utilities.">
+
+  <meta name="theme-color" content="#111827">
+
+  <title>Patro Hub — Support</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVIGATION */
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: auto;
+
+      padding: 18px 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-size: 20px;
+      font-weight: 750;
+      letter-spacing: -0.4px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+
+      border-radius: 11px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+
+      font-size: 20px;
+      font-weight: 800;
+
+      box-shadow: 0 6px 18px rgba(17, 24, 39, 0.18);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 26px;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      color: #4b5563;
+    }
+
+    .nav-links a:hover {
+      color: #111827;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        radial-gradient(
+          circle at 20% 10%,
+          rgba(99, 102, 241, 0.14),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(14, 165, 233, 0.13),
+          transparent 32%
+        ),
+        #ffffff;
+
+      padding: 105px 24px 95px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+
+      padding: 7px 13px;
+      margin-bottom: 20px;
+
+      border-radius: 999px;
+
+      background: #eef2ff;
+      color: #4338ca;
+
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
+
+      letter-spacing: -3px;
+
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(90deg, #111827, #4f46e5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+
+      color: #6b7280;
+
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .hero-buttons {
+      margin-top: 34px;
+
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 48px;
+      padding: 0 22px;
+
+      border-radius: 12px;
+
+      font-size: 15px;
+      font-weight: 700;
+
+      transition: transform 0.2s ease,
+                  box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: #111827;
+      color: white;
+
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.18);
+    }
+
+    .button-secondary {
+      background: white;
+      color: #111827;
+
+      border: 1px solid #d1d5db;
+    }
+
+    /* MAIN */
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 24px;
+    }
+
+    .section-header {
+      max-width: 700px;
+      margin-bottom: 42px;
+    }
+
+    .section-label {
+      color: #4f46e5;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      margin-bottom: 10px;
+    }
+
+    .section h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -1.4px;
+
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      color: #6b7280;
+      font-size: 17px;
+    }
+
+    /* FEATURES */
+
+    .feature-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .feature-card {
+      background: white;
+
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+
+      padding: 28px;
+
+      box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.04);
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+
+      box-shadow:
+        0 14px 35px rgba(15, 23, 42, 0.08);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 13px;
+
+      background: #f3f4f6;
+
+      font-size: 23px;
+
+      margin-bottom: 18px;
+    }
+
+    .feature-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    /* SUPPORT */
+
+    .support-box {
+      background: #111827;
+      color: white;
+
+      border-radius: 24px;
+
+      padding: 52px;
+
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+
+      gap: 40px;
+
+      box-shadow:
+        0 20px 50px rgba(17, 24, 39, 0.18);
+    }
+
+    .support-box h2 {
+      font-size: 36px;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+
+    .support-box p {
+      color: #d1d5db;
+      font-size: 16px;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.08);
+
+      border: 1px solid rgba(255,255,255,0.12);
+
+      border-radius: 16px;
+
+      padding: 24px;
+    }
+
+    .contact-card strong {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .contact-card span {
+      color: #d1d5db;
+      font-size: 14px;
+    }
+
+    /* FAQ */
+
+    .faq {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      background: white;
+
+      border: 1px solid #e5e7eb;
+
+      border-radius: 14px;
+
+      padding: 20px 22px;
+    }
+
+    summary {
+      cursor: pointer;
+
+      font-weight: 700;
+
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      margin-top: 12px;
+
+      color: #6b7280;
+
+      font-size: 15px;
+    }
+
+    /* PRIVACY */
+
+    .privacy-box {
+      background: white;
+
+      border: 1px solid #e5e7eb;
+
+      border-radius: 20px;
+
+      padding: 34px;
+    }
+
+    .privacy-box p {
+      color: #6b7280;
+      margin-bottom: 16px;
+    }
+
+    .privacy-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0b1120;
+      color: #9ca3af;
+
+      padding: 45px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 25px;
+    }
+
+    .footer-brand {
+      color: white;
+      font-weight: 750;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .copyright {
+      margin-top: 28px;
+
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+
+      padding-top: 25px;
+
+      border-top: 1px solid #1f2937;
+
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 75px 20px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .section {
+        padding: 65px 20px;
+      }
+
+      .section h2 {
+        font-size: 31px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .support-box {
+        grid-template-columns: 1fr;
+
+        padding: 32px 24px;
+      }
+
+      .support-box h2 {
+        font-size: 30px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav class="nav">
+    <div class="nav-inner">
+
+      <a href="#" class="brand">
+        <div class="brand-icon">P</div>
+        <span>Patro Hub</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#support">Support</a>
+        <a href="#faq">FAQ</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        NEPALI CALENDAR & EVERYDAY ESSENTIALS
+      </div>
+
+      <h1>
+        Everything Nepal,<br>
+        <span>in one place.</span>
+      </h1>
+
+      <p>
+        Patro Hub brings together the Nepali calendar,
+        Panchang, Kundali, Astrology, Rashifal, mobile
+        recharge and useful everyday services in one
+        convenient app.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#support"
+           class="button button-primary">
+          Get Support
+        </a>
+
+        <a href="#features"
+           class="button button-secondary">
+          Explore Features
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- FEATURES -->
+
+  <section class="section" id="features">
+
+    <div class="section-header">
+
+      <div class="section-label">
+        What Patro Hub offers
+      </div>
+
+      <h2>
+        Built for everyday life in Nepal.
+      </h2>
+
+      <p>
+        A collection of useful tools and information
+        designed to keep everything you need close at hand.
+      </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+
+        <div class="feature-icon">📅</div>
+
+        <h3>Nepali Calendar</h3>
+
+        <p>
+          Explore Nepali dates, festivals, holidays,
+          events and important daily information.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">🕉️</div>
+
+        <h3>Panchang</h3>
+
+        <p>
+          View daily Tithi, Nakshatra, Yoga, Karana,
+          sunrise, sunset and other Panchang information.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">🔮</div>
+
+        <h3>Kundali & Astrology</h3>
+
+        <p>
+          Explore Kundali and astrology features
+          designed around traditional astrological information.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">✨</div>
+
+        <h3>Daily Rashifal</h3>
+
+        <p>
+          Discover daily zodiac insights and Rashifal
+          for all twelve zodiac signs.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">📱</div>
+
+        <h3>NTC & Ncell Recharge</h3>
+
+        <p>
+          Quickly access mobile recharge services
+          for NTC and Ncell.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">🔄</div>
+
+        <h3>Date Converter</h3>
+
+        <p>
+          Convert dates between Nepali Bikram Sambat
+          and Gregorian calendar systems.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">💰</div>
+
+        <h3>Gold & Silver Rates</h3>
+
+        <p>
+          Check useful gold and silver price information
+          for Nepal.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">💱</div>
+
+        <h3>Currency</h3>
+
+        <p>
+          Access currency exchange information
+          for everyday use.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">📰</div>
+
+        <h3>News & Updates</h3>
+
+        <p>
+          Stay informed with useful news and
+          updates from Nepal.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SUPPORT -->
+
+  <section class="section" id="support">
+
+    <div class="support-box">
+
+      <div>
+
+        <div class="section-label"
+             style="color:#a5b4fc;">
+          SUPPORT
+        </div>
+
+        <h2>
+          Need help with Patro Hub?
+        </h2>
+
+        <p>
+          If you experience a problem, have a question,
+          or would like to share feedback, we're here to help.
+        </p>
+
+        <br>
+
+        <p>
+          When contacting support, please include your
+          device model, iOS version and a short description
+          of the issue. Screenshots are helpful when possible.
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <strong>
+          Contact Patro Hub Support
+        </strong>
+
+        <span>
+          Please replace the placeholder email below
+          with your real support email before publishing.
+        </span>
+
+        <br><br>
+
+        <!-- REPLACE THIS EMAIL -->
+
+        <a
+          href="mailto:bhupendradahal30@gmail.com"
+          style="
+            display:inline-block;
+            margin-top:8px;
+            color:#a5b4fc;
+            font-weight:700;
+          "
+        >
+          bhupendradahal30@gmail.com
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+
+  <section class="section" id="faq">
+
+    <div class="section-header">
+
+      <div class="section-label">
+        Frequently Asked Questions
+      </div>
+
+      <h2>
+        Common questions.
+      </h2>
+
+      <p>
+        Quick answers to some common questions about Patro Hub.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+      <details>
+
+        <summary>
+          What is Patro Hub?
+        </summary>
+
+        <p>
+          Patro Hub is an all-in-one app providing
+          Nepali calendar information, Panchang,
+          Kundali, Astrology, Rashifal, date conversion,
+          recharge access and other everyday utilities.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Does Patro Hub require an account?
+        </summary>
+
+        <p>
+          Core features of Patro Hub are designed to
+          be accessible without requiring users to create
+          an account.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          How can I report a problem?
+        </summary>
+
+        <p>
+          Contact Patro Hub Support using the support
+          email provided on this page. Please include
+          enough information for us to understand and
+          reproduce the problem.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Is the astrology information for professional advice?
+        </summary>
+
+        <p>
+          Astrology and Rashifal content is provided
+          for informational and entertainment purposes
+          and should not be considered professional,
+          medical, financial or legal advice.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Which services are available in Patro Hub?
+        </summary>
+
+        <p>
+          Depending on the available features and
+          services, Patro Hub includes Nepali calendar,
+          Panchang, Kundali, Astrology, Rashifal,
+          NTC and Ncell recharge, date conversion,
+          gold and silver information, currency and more.
+        </p>
+
+      </details>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRIVACY -->
+
+  <section class="section" id="privacy">
+
+    <div class="section-header">
+
+      <div class="section-label">
+        Privacy
+      </div>
+
+      <h2>
+        Your privacy matters.
+      </h2>
+
+      <p>
+        Patro Hub is designed with transparency
+        about how information is handled.
+      </p>
+
+    </div>
+
+
+    <div class="privacy-box">
+
+      <p>
+        Patro Hub may use third-party services to
+        provide features such as analytics,
+        crash reporting, notifications and advertising.
+      </p>
+
+      <p>
+        Information collected by these services may
+        be handled according to their respective
+        privacy policies.
+      </p>
+
+      <p>
+        We recommend reviewing the full Patro Hub
+        Privacy Policy before using the application.
+      </p>
+
+      <!--
+        IMPORTANT:
+        Replace the link below with your final
+        privacy-policy page when it is created.
+      -->
+
+      <p>
+        <a href="privacy.html"
+           style="
+             color:#4f46e5;
+             font-weight:700;
+           ">
+          View Privacy Policy →
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        Patro Hub
+      </div>
+
+      <div class="footer-links">
+
+        <a href="#features">
+          Features
+        </a>
+
+        <a href="#support">
+          Support
+        </a>
+
+        <a href="#faq">
+          FAQ
+        </a>
+
+        <a href="#privacy">
+          Privacy
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Patro Hub. All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
